@@ -1,0 +1,157 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/cyclesDesign.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Vicious Cycles Bicycle Shop</title>
+<!-- InstanceEndEditable -->
+<link href="style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+</style>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>
+var __adobewebfontsappname__="dreamweaver"
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body onLoad="MM_preloadImages('images/icons/twitter-hover.png','images/icons/facebook-hover.png','images/icons/instagram-hover.png','images/icons/youtube-hover.png')">
+
+<header>
+  <section id="header-contact">
+    <p>tel: (999)123-4567</p>
+    <p>fax: (999)765-4321</p>
+    <p>123 Main Street</p>
+    <p>Durham, NC 27704</p>
+  <a href="http://www.twitter.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('twitter-icon','','images/icons/twitter-hover.png',1)"><img src="images/icons/twitter-icon.png" alt="twitter" width="24" height="24" id="twitter-icon"></a> 
+  <a href="http://www.facebook.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('facebook-icon','','images/icons/facebook-hover.png',1)"><img src="images/icons/facebook-icon.png" alt="facebook" width="24" height="24" id="facebook-icon"></a>
+  <a href="http://www.instagram.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('instagram-icon','','images/icons/instagram-hover.png',1)"><img src="images/icons/instagram-icon.png" alt="instagram" width="24" height="24" id="instagram-icon"></a>
+  <a href="http://www.youtube.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('youtube-icon','','images/icons/youtube-hover.png',1)"><img src="images/icons/youtube-icon.png" alt="youtube" width="24" height="24" id="youtube-icon"></a>
+  </section>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html" class="nav-a">home</a></li>
+    	<li><a href="news.html" class="nav-a">news</a></li>
+    	<li><a href="shop.html" class="nav-a">shop</a></li>
+    	<li><a href="contact.html" class="nav-a">contact</a></li>
+    </ul>
+</nav>
+
+<div>
+<!-- InstanceBeginEditable name="Page Content" -->
+  <section class="main-copy">
+  
+  <section class="main-copy-blurb">
+  <h3>Customer Satisfaction</h3>
+At Vicious Cycles, we are committed to providing superior customer service and satisfaction. Our staff will assist you every step of the way, from product selection and ordering to truly custom builds. We’ve been doing this whole custom thing for quite a while, and we've seen some ups and downs, we're loving every moment of it. A proper custom build takes time, and we’ll work closely with you to get it right. From stylish cycles to trusty monster rides, we’ve done them all. Talk with a member of our mechanics team to discuss your plan, and we'll see your dream realized.
+  </section>
+  
+  <section class="main-copy-blurb">
+  <h2>Contact Us</h2>
+  <ul>
+  <li>Phone: (999)123-4567</li>
+  <li>Fax: (999) 765-4321</li>
+  <li>Location:</li>
+  <li>123 MainStreet</li>
+  <li>Durham, NC 27704</li>
+  <li>Hours:</li>
+  <li>M-F: 8AM-8PM</li>
+  <li>S-S: 7AM-9PM</li>
+  </ul>
+  </section>
+  
+  <h4>If you'd like to reach us by email...</h4>
+  <p>submit the following information and we will be sure to get back in touch with you within a day or two. </p>
+  <form method="post" name="contact" class="contact-form" >
+    <p>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name">
+    </p>
+    <br>
+    <p>
+      <label for="email2">Email:</label>
+      <input name="email2" type="email" required id="email2">
+    </p>
+    <br>
+    <p>
+      <label for="content">What's up?</label>
+      <textarea name="content" required id="content"></textarea>
+    </p>
+    <input type="submit" name="submit2" id="submit2" value="Submit">
+  </form>
+  
+  
+  </section>
+
+  <section class="side-bar">
+  <section class="blurb-text">
+  <p>Our monthly newsletter is a great way to stay in the loop with Vicious Cycles. You'll find information about new products, articles about cycling, and special offers avaiable in-store. The form below is the email sign-up.
+  <h3>Join our mailing list:</h3>
+  <form action="mailto:info@viciouscycles.net" method="post" name="newsletter" class="newsletter-form">
+    <p>
+      <label for="email">Email:</label>
+      <input name="email" type="text" required id="email">
+    </p>
+      <input type="submit" name="submit" id="submit" value="Submit">
+  </form>
+  </section>
+  
+  <section class="blurb-text">
+  <h3>Our store location: </h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.0617802889587!2d-78.70614054906692!3d35.65084948010416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac8bd3143b0f53%3A0x6db3d71094436c7f!2s9101+Fayetteville+Rd%2C+Raleigh%2C+NC+27603!5e0!3m2!1sen!2sus!4v1481722545941" frameborder="0" class="blurb-text-iframe" style="border:0" allowfullscreen></iframe>
+ </section>
+  </section>
+  
+  <!-- InstanceEndEditable -->
+</div>
+
+<footer>
+
+<section class="footer-social">
+<p>Find us on social media!</p>
+  <a href="http://www.twitter.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('twitter-icon-2','','images/icons/twitter-hover.png',1)"><img src="images/icons/twitter-icon.png" alt="twitter" width="24" height="24" id="twitter-icon-2"></a>
+  <a href="http://www.facebook.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('facebook-icon-2','','images/icons/facebook-hover.png',1)"><img src="images/icons/facebook-icon.png" alt="facebook" width="24" height="24" id="facebook-icon-2"></a>
+  <a href="http://www.instagram.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('instagram-icon-2','','images/icons/instagram-hover.png',1)"><img src="images/icons/instagram-icon.png" alt="instagram" width="24" height="24" id="instagram-icon-2"></a>
+  <a href="http://www.youtube.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('youtube-icon-2','','images/icons/youtube-hover.png',1)"><img src="images/icons/youtube-icon.png" alt="youtube" width="24" height="24" id="youtube-icon-2"></a> 
+ </section>
+  
+<section class="footer-contact">
+ <p>tel: (999)123-4567</p>
+ <p>fax: (999)765-4321</p>
+ <p>123 Main Street</p>
+ <p>Durham, NC 27704</p>
+</section>
+
+<section class="footer-hours">
+ <p>Come See us!</p>
+ <p>M - F: 8 AM - 8 PM</p>
+ <p>S - S: 7 AM - 9 PM</p>
+ </section>
+
+</footer>
+
+</body>
+<!-- InstanceEnd --></html>
