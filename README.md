@@ -1,2 +1,2 @@
 # Cycles_Website
-this was a project for my very first web development class
+This project was for my very first web development class, which I took in Fall of 2016.
